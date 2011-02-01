@@ -2,7 +2,7 @@
 <addon
   id="skin.frontseat"
   version="1.0.1"
-  name="Blur"
+  name="FrontSeat"
   provider-name="jaaps">
   <requires>
     <import addon="xbmc.gui" version="2.11"/>
