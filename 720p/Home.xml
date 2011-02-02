@@ -13,7 +13,7 @@
 				<width>300</width>
 				<height>50</height>
 				<aligny>center</aligny>
-				<label>My Media</label>
+				<label>PleXBMC</label>
 				<textcolor>White</textcolor>
 				<scroll>false</scroll>
 				<font>homeheader</font>
@@ -105,12 +105,20 @@
 				<content>
 					<item id="1">
 						<description>Favorites Menu</description>
-						<label>Favorites</label>
-						<onclick>Plex.ActivateWindow(Favourites)</onclick>
+						<label>Movies</label>
+						<onclick>ActivateWindow(VideoLibrary,"plugin://plugin.video.plexbmc/?url=http&mode=10&name=Movies",return)</onclick>
 					</item>
 					<item id="2">
-						<label>Movies</label>
-						<onclick>ActivateWindow(10024,"plugin://plugin.video.plexbmc/?url=http://Mac-mini-van-Jaap.local.:32400/library/sections/6/all&amp;mode=2&amp;name=Movies")</onclick>
+						<label>TV Shows</label>
+						<onclick>ActivateWindow(VideoLibrary,"plugin://plugin.video.plexbmc/?url=http&mode=11&name=TVShows")</onclick>
+					</item>
+                    <item id="3">
+						<label>Plugins</label>
+						<onclick>ActivateWindow(VideoLibrary,"plugin://plugin.video.plexbmc/?url=http&mode=12&name=Plugins")</onclick>
+					</item>
+                    <item id="4">
+						<label>Servers</label>
+						<onclick>ActivateWindow(VideoLibrary,"plugin://plugin.video.plexbmc/?url=http&mode=13&name=Servers")</onclick>
 					</item>
 				</content>
 			</control>
